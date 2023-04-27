@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "hellfreezesover",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Hell Freezes Over",
+  "description": "Prevent Incendium + seed fix from deleting the world seed.",
   "authors": [
-    "Me!"
+    "jlortiz0"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.jlortiz.HellFreezesOver.HellFreezesOver"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "hellfreezesover.mixins.json"
   ],
+  "accessWidener": "hellfreezesover.accesswidener",
 
   "depends": {
     "fabricloader": ">=0.14.6",

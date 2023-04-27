@@ -41,11 +41,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modRuntimeOnly "curse.maven:incendium-591388:4402958"
-	modImplementation files("libs/seedfix-1.0.2.jar")
-}
-
-loom {
-	accessWidenerPath = file("src/main/resources/hellfreezesover.accesswidener")
+	modRuntimeOnly files("libs/seedfix-1.0.2.jar")
 }
 
 processResources {

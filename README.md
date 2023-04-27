@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Hell Freezes Over
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+This mod prevents SeedFix from overwriting the overworld seed with one from the Nether in case the overworld seed somehow becomes 0.
+This is useful if you have a mod that modifies the seed of the Nether (such as Incendium).
+However, it will overwrite the seeds of any dimension that uses the Minecraft noise generator. 
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is under the MIT license. Feel free to use it in your own modpacks.

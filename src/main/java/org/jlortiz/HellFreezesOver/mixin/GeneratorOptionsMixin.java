@@ -26,9 +26,6 @@ public class GeneratorOptionsMixin {
 	@Inject(at = @At("RETURN"), method = "<init>(JZZLnet/minecraft/util/registry/Registry;Ljava/util/Optional;)V")
 	private void fixSeed(CallbackInfo ci) {
 		for (Identifier id : this.options.getIds()) {
-			if (!id.getNamespace().equals("minecraft")) {
-				continue;
-			}
 			DimensionOptions dim = this.options.get(id);
 			ChunkGenerator g = dim.getChunkGenerator();
 			if (g instanceof NoiseChunkGenerator gen) {

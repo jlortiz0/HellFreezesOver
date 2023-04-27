@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Hell Freezes Over",
-  "description": "Prevent Incendium + seed fix from deleting the world seed.",
+  "description": "Prevent Incendium + SeedFix from overwriting the world seed.",
   "authors": [
     "jlortiz0"
   ],
@@ -25,7 +25,6 @@
   "mixins": [
     "hellfreezesover.mixins.json"
   ],
-  "accessWidener": "hellfreezesover.accesswidener",
 
   "depends": {
     "fabricloader": ">=0.14.6",
@@ -33,7 +32,5 @@
     "minecraft": "~1.18.2",
     "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
-  }
+  "suggests": {}
 }
